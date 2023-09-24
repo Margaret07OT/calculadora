@@ -1,0 +1,37 @@
+@model webapp.Models.IGV
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    Completar el IGV de un producto
+  
+<form asp-controller="IGVVVVVVVV" asp-action="VAMOS A CALCULAR">
+
+    <strong><label asp-for="Operador1" class="control-label"></label></strong>
+    <input asp-for="Operador1" class="form-control" />
+  
+   <strong><label asp-for="Operador2" class="control-label"></label></strong>
+    <input asp-for="Operador2" class="form-control" />
+    
+    <strong><label asp-for="Operador3" class="control-label"></label></strong>
+    <input asp-for="Operador3" class="form-control" />
+   
+   </form>
+
+  <form asp-controller="IGV" asp-action="Calcular">
+    <strong><label asp-for="Pre" class="control-label"></label></strong>
+    <input asp-for="Pre" class="form-control" />
+    <button type="submit" class="btn btn-primary">Calcular</button>
+   </form>
+  
+    <h1>@ViewData["Message"]</h1>
+</body>
+</html>
