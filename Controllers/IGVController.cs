@@ -32,7 +32,7 @@ namespace webapp.Controllers
                 resultado = objIGV.Pre * 0.18;
                 total = resultado + objIGV.Pre;
 
-                ViewData["Message"] ="El IGV es " + resultado + " y el Total es " + total;
+                ViewData["Message"] ="MI IGV es " + resultado + " y el Total es " + total;
 
 
             return View("Index");
